@@ -4,4 +4,4 @@ EXPOSE 9090
 ADD target/api.jar api.jar
 #COPY ${JAR_FILE} app.jar
 # Set ENTRYPOINT in exec form to run the container as an executable
-ENTRYPOINT ["java","-jar","/app.jar"]
+ENTRYPOINT ["java","-jar","/api.jar"]
